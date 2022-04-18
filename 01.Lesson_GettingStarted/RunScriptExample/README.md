@@ -24,9 +24,9 @@ certoraRun BankLesson1/Bank.sol:Bank --verify Bank:BankLesson1/IntegrityOfDeposi
 
 </br>
 
-- [ ] Open the shell script [verifyIntegrityOfDeposit](verifyIntegrityOfDeposit.sh) and read it. Make sure that you understand each line, and that you are familiar with every flag.
+- [x] Open the shell script [verifyIntegrityOfDeposit](verifyIntegrityOfDeposit.sh) and read it. Make sure that you understand each line, and that you are familiar with every flag.
 
-    - [ ] Do you recognize this run command? This is basically the first run in BankLesson1.
+    - [x] Do you recognize this run command? This is basically the first run in BankLesson1.
 
 </br>
 
