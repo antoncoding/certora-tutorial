@@ -53,9 +53,10 @@ rule checkStartedToStateTransition(method f, uint256 meetingId) {
 	calldataarg args;
 	uint8 stateBefore = getStateById(e, meetingId);
 	f(e, args);
+	uint8 stateAfter = getStateById(e, meetingId);
 	
-	assert (stateBefore == 2 => (getStateById(e, meetingId) == 2 || getStateById(e, meetingId) == 4)), "the status of the meeting changed from STARTED to an invalid state";
-	assert ((stateBefore == 2 && getStateById(e, meetingId) == 4) => f.selector == endMeeting(uint256).selector), "the status of the meeting changed from STARTED to ENDED through a function other then endMeeting()";
+	assert (stateBefore == 2 => (stateAfter == 2 || stateAfter == 3 || stateAfter == 4)), "the status of the meeting changed from STARTED to an invalid state";
+	assert ((stateBefore == 2 && stateAfter == 3) => f.selector == endMeeting(uint256).selector), "the status of the meeting changed from STARTED to ENDED through a function other then endMeeting()";
 }
 
 
@@ -67,10 +68,11 @@ rule checkPendingToCancelledOrStarted(method f, uint256 meetingId) {
 	calldataarg args;
 	uint8 stateBefore = getStateById(e, meetingId);
 	f(e, args);
+	uint8 stateAfter = getStateById(e, meetingId);
 	
-	assert (stateBefore == 1 => (getStateById(e, meetingId) == 1 || getStateById(e, meetingId) == 2 || getStateById(e, meetingId) == 4)), "invalidation of the state machine";
-	assert ((stateBefore == 1 && getStateById(e, meetingId) == 2) => f.selector == startMeeting(uint256).selector), "the status of the meeting changed from PENDING to STARTED through a function other then startMeeting()";
-	assert ((stateBefore == 1 && getStateById(e, meetingId) == 4) => f.selector == cancelMeeting(uint256).selector), "the status of the meeting changed from PENDING to CANCELLED through a function other then cancelMeeting()";
+	assert (stateBefore == 1 => (stateAfter == 1 || stateAfter == 2 || stateAfter == 4)), "invalidation of the state machine";
+	assert ((stateBefore == 1 && stateAfter == 2) => f.selector == startMeeting(uint256).selector), "the status of the meeting changed from PENDING to STARTED through a function other then startMeeting()";
+	assert ((stateBefore == 1 && stateAfter == 4) => f.selector == cancelMeeting(uint256).selector), "the status of the meeting changed from PENDING to CANCELLED through a function other then cancelMeeting()";
 }
 
 
@@ -79,6 +81,10 @@ rule monotonousIncreasingNumOfParticipants(method f, uint256 meetingId) {
 	env e;
 	calldataarg args;
 	uint256 numOfParticipantsBefore = getNumOfParticipents(e, meetingId);
+	
+	// if numOfParticipantsBefore > 0, meeting already exists
+	require numOfParticipantsBefore > 0 => (getStateById(e, meetingId) != 0);
+	
 	f(e, args);
     uint256 numOfParticipantsAfter = getNumOfParticipents(e, meetingId);
 
