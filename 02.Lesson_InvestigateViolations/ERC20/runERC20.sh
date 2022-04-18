@@ -1,5 +1,5 @@
-certoraRun ERC20Fixed.sol:ERC20 --verify ERC20:ERC20.spec \
---solc solc8.0 \
+certoraRun ERC20Bug4.sol:ERC20 --verify ERC20:ERC20.spec \
+--solc solc8.13 \
 --optimistic_loop \
---send_only \
+# --send_only \
 --msg "$1"
