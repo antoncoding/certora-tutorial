@@ -23,11 +23,11 @@ For each of the systems in this directory do as follows:
 
 </br>
 
-- [ ] Open the interface and read the documentation and functions' signatures. The comments should get you clear on how the system should operate without going into implementation details.
+- [x] Open the interface and read the documentation and functions' signatures. The comments should get you clear on how the system should operate without going into implementation details.
 
 </br>
 
-- [ ] Open the spec file and go over the rules and comments there. Try to understand what the rule tries to capture and make sure that you understand this property. Look at the implementation of the rules and see if the code is clear to you.
+- [x] Open the spec file and go over the rules and comments there. Try to understand what the rule tries to capture and make sure that you understand this property. Look at the implementation of the rules and see if the code is clear to you.
 
 > Make sure to read the comments at the top that explains about some new concepts that are used in the code.
 
@@ -90,7 +90,7 @@ For each of the systems in this directory do as follows:
 
 </br>
 
-- [ ] Continue to next lesson: [SMT](../03.Lesson_SMT) to learn about the underlying mechanism of the Certora Prover.
+- [x] Continue to next lesson: [SMT](../03.Lesson_SMT) to learn about the underlying mechanism of the Certora Prover.
 
 </br>
 
