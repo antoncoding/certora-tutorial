@@ -53,11 +53,11 @@ For each of the systems in this directory do as follows:
 
 </br>
 
-- [ ] Follow the violations as explained in [BankLesson1](../01.Lesson_GettingStarted/BankLesson1) to find out the source of the bugs.
+- [x] Follow the violations as explained in [BankLesson1](../01.Lesson_GettingStarted/BankLesson1) to find out the source of the bugs.
 
-- [ ] Fix the causes of the violations and check that the rules are really passing (green thumb up). **Be sure not to weaken the rules.**
+- [x] Fix the causes of the violations and check that the rules are really passing (green thumb up). **Be sure not to weaken the rules.**
 
-- [ ] Save your solution to each bug in the same file that you found it in, next to the changed line(s). Mark your findings by adding a comment explaining the fix in 1-2 sentences in the following format: //@note the require checked `a > b`, when it should've checked `b > a`. 
+- [x] Save your solution to each bug in the same file that you found it in, next to the changed line(s). Mark your findings by adding a comment explaining the fix in 1-2 sentences in the following format: //@note the require checked `a > b`, when it should've checked `b > a`. 
 
 > :bulb: 
 > <details>

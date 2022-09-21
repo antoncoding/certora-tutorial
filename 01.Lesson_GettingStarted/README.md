@@ -26,7 +26,7 @@
 
 </br>
 
-- [ ] Fork the [Tutorials](https://github.com/Certora/Tutorials) repository to your github account. </br>
+- [x] Fork the [Tutorials](https://github.com/Certora/Tutorials) repository to your github account. </br>
 You can use the following link as a guide: [Forking Repository On Github](https://docs.github.com/en/get-started/quickstart/fork-a-repo#forking-a-repository). </br>
 Clone your repository to your local machine so you'll have everything you need on your pc.
 
@@ -36,7 +36,7 @@ Clone your repository to your local machine so you'll have everything you need o
 
 </br>
 
-- [ ] Register to our [Discourse Forum](https://forum.certora.com/) and consider to introduce yourself in the [Introduction Thread](https://forum.certora.com/t/introduce-yourself/27/2).
+- [x] Register to our [Discourse Forum](https://forum.certora.com/) and consider to introduce yourself in the [Introduction Thread](https://forum.certora.com/t/introduce-yourself/27/2).
 
 </br>
 
@@ -84,7 +84,7 @@ For that reason we often write a shell scripts of the run command that includes 
 
 </br>
 
-- [ ] Continue to next lesson: [Investigate Violations](../02.Lesson_InvestigateViolations) to exercise some more script writing and the art of understanding violations.
+- [x] Continue to next lesson: [Investigate Violations](../02.Lesson_InvestigateViolations) to exercise some more script writing and the art of understanding violations.
 
 </br>
 
