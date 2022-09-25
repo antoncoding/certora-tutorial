@@ -2,7 +2,7 @@
 
 ## How Certora Prover Works
 
-- [ ] Watch a lecture by Dr. Chandrakana Nandi - [Link](https://www.youtube.com/watch?v=c5ViO3Dpfqs) On the mechanism of the Certora Verification Tool (CVT).
+- [x] Watch a lecture by Dr. Chandrakana Nandi - [Link](https://www.youtube.com/watch?v=c5ViO3Dpfqs) On the mechanism of the Certora Verification Tool (CVT).
 
 ## Additional Useful flags
 
