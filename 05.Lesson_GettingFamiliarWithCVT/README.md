@@ -8,7 +8,7 @@
 
 </br>
 
-- [ ] Follow the instructions on [ScriptExercise2](ScriptExercise2) to learn how to use additional frequently used flags.
+- [x] Follow the instructions on [ScriptExercise2](ScriptExercise2) to learn how to use additional frequently used flags.
 
 - [ ] Have a look at the shell scripts lying in this directory. They are real life examples for scripts that were used to run verifications on contracts of some well known actors in the Ethereum space. </br>
 These scripts flags and features that we still haven't gone through. Try to see if you recognize the parts that we did learned about, and use the `--help` flag to read about additional flags you see if you are interested.
@@ -17,7 +17,7 @@ These scripts flags and features that we still haven't gone through. Try to see 
 
 </br>
 
-- [ ] Have a brief look at the entry on [CLI Options](https://certora.atlassian.net/wiki/spaces/CPD/pages/7340043/Certora+Prover+CLI+Options) in the documentation.
+- [x] Have a brief look at the entry on [CLI Options](https://certora.atlassian.net/wiki/spaces/CPD/pages/7340043/Certora+Prover+CLI+Options) in the documentation.
 This is where you'll go to learn about additional flags and options. Some of these can help you overcome problems, customize the output to your needs, and make your life much easier.
 We will introduce more specific flags in future lessons when using them help up solve problems.
 
@@ -27,7 +27,7 @@ We will introduce more specific flags in future lessons when using them help up 
 
 ## Thinking About Properties
 
-- [ ] Continue to next lesson: [Thinking Properties](../06.Lesson_ThinkingProperties) to learn what are systems' properties and how to think about them for the purpose of writing specifications.
+- [x] Continue to next lesson: [Thinking Properties](../06.Lesson_ThinkingProperties) to learn what are systems' properties and how to think about them for the purpose of writing specifications.
 
 </br>
 
